@@ -16,8 +16,8 @@ public class ComparisonScript : MonoBehaviour
 
     public void Comparison()
     {
-        int a = int.Parse(Afield.text);
-        int b = int.Parse(Bfield.text);
+        double a = Convert.ToDouble(Afield.text.Replace(".", ","));
+        double b = Convert.ToDouble(Bfield.text.Replace(".", ","));
         if (a == b)
             {
                 Answer.text = Convert.ToString("Числа Равны!");
